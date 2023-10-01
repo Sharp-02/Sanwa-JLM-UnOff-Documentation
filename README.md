@@ -1,4 +1,4 @@
-# Sanwa-JLM-UnOff-Documentation
+# Sanwa JLM Unofficial Documentation
 Non-affiliated documentation, deconstruction, and partial reverse engineering of the Sanwa JLM (Joystick Lever Magnetic).
 
 ----------
