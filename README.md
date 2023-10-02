@@ -25,7 +25,8 @@ Non-affiliated documentation, deconstruction, and partial reverse engineering of
 * Angle at max/min voltage
 * Signal center deadzone (if any)
 * Sensitivity (per axis direction)
-* Analog output resolution
+* Analog output step resolution
+    * Does resolution change with angle?    
 * Tables relating direction and sensitivity
 * Standing Voltage Noise
 * measured with no signal conditioning and with simple 3x gain
@@ -34,9 +35,15 @@ Non-affiliated documentation, deconstruction, and partial reverse engineering of
 ### Other
 
 Calibration Gates:
-* Max angle octagonal      
+* Max angle octagonal
+    * 1.0 and 0.707 inputs 
 * Half angle square
+    * 0.5 corner inputs (tests axis codependence)
 * Half angle diamond
-* Quarter angle diagonal
+    * 0.5 cardinal inputs 
+* Quarter angle diamond
+    * 0.25 cardinal inputs
 * 10% diamond
+    * 0.1 cardinal inputs (tests near zero sensitivity)
 * 5% diamond
+    * 0.05 cardinal inputs (tests deadzone and near zero sensitivity)
