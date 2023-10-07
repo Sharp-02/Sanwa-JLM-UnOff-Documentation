@@ -33,6 +33,10 @@ Non-affiliated documentation, deconstruction, and partial reverse engineering of
 
 
 ### Other
+Snapback:
+* Return Time
+* % Overshoot
+* Settle Time
 
 Calibration Gates:
 * Max angle octagonal
@@ -47,3 +51,27 @@ Calibration Gates:
     * 0.1 cardinal inputs (tests near zero sensitivity)
 * 5% diamond
     * 0.05 cardinal inputs (tests deadzone and near zero sensitivity)
+
+
+----------
+
+----------
+
+# Electrical Specifications:
+
+Manufacturer Recommended Source Voltage: 5V
+Manufacturer Voltage Range: +/- 1.5V from Center
+Manufacturer Center Voltage Drift: 0.3V
+
+.
+
+At 5V:
+Center Voltage: 2.5V
+Voltage Range: +/- 1V From Center 
+    (1.53V - 3.44V Y)
+
+![image](https://github.com/Sharp-02/Sanwa-JLM-UnOff-Documentation/assets/86936750/717e3b7c-39fd-46f3-a331-3865acd09732)
+
+
+
+Current Draw at 5V: Estimated 50 mA
