@@ -1,3 +1,5 @@
+![image](https://github.com/Sharp-02/Sanwa-JLM-UnOff-Documentation/assets/86936750/647abf6d-daca-4364-b3f9-ecfbf9257066)
+
 # Test 1- Circularity and Range
 
 Circularity seems to be fairly accurate
