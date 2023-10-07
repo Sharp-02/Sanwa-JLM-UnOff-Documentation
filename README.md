@@ -24,8 +24,9 @@ Measured at 5V:
 
 Switch Characteristics:
 * Operated by pressing lever in
-* Standing Voltage: Matches V Supply
-* Activated Voltage: 0.03V
+* Minimum Supply Voltage: 1.6V
+* Output Standing Voltage: Matches V Supply
+* Output Activated Voltage: 0.03V
 * Switch Activation (Fall) Time: 80ns
 * Switch Deactivation (Rise) Time: 360ns
 * Note: Switch can only be acticated around +/- 7 degrees from center
@@ -36,6 +37,9 @@ Switch Characteristics:
 
 ### Physical Documentation
 * Pictures and dimensions of joystick components
+   * Shaft Diameter
+   * Top Hole Diameter
+   * Dust Cover ID & OD
 * Physical throw max angle
 * Physical throw deadzone
 * Pivot height relative to top of mounting panel
@@ -103,8 +107,18 @@ Voltage Range: +/- 1V From Center
 
 Current Draw at 5V: Estimated 50 mA
 
+#### Hall Effect Board:
 
+This board is encased in plastic below the JLM and provides the sensing of the lever angle through use of the on-board hall effect sensors.
+<img src="https://github.com/Sharp-02/Sanwa-JLM-UnOff-Documentation/assets/86936750/86b95a9e-98a8-4e4e-9e8c-9e5223cbfe30" width=30% height=30%>
+<img src="https://github.com/Sharp-02/Sanwa-JLM-UnOff-Documentation/assets/86936750/77d529e7-0619-4ad5-95e8-3a3489f6aa48" width=30% height=30%>
 
 It is unclear whether or not the Sanwa JLM utilizes a 3D hall effect sensor and a microcontroller or a combination of a planar hall effect sensor and a switching hall effect sensor.
 
-Evidence for the latter exists in the on-board IC connections. The connection of the U2 center pin is ambiguous, but one pin of the U2 IC is conneced directly to the switch pin. Pins 4 and 5 of U1 connect directly to the Y (green wire) and X (blue wire) axis output pins. This would also 
+Evidence for the latter exists in the on-board IC connections. The connection of the U2 center pin is ambiguous, but one pin of the U2 IC is conneced directly to the switch pin. Pins 4 and 5 of U1 connect directly to the Y (green wire) and X (blue wire) axis output pins. This would also explain the correlation between voltage range and voltage supply, as well as the disconnect in the supply voltage required for the switching behavior compared to the analog axis behavior.
+
+The specific IC components for both U1 and U2 are currently unknown. Likely, U1 is a planar hall effect sensor, while U2 is a switching hall effect sensor.
+
+Clearer image of U2 IC part number:
+
+<img src="https://github.com/Sharp-02/Sanwa-JLM-UnOff-Documentation/assets/86936750/99a4983f-6ac1-41b3-8b7e-2fd25335ff15" width=30% height=30%>
