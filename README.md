@@ -23,6 +23,7 @@ Measured at 5V:
 * Circularity Error (RMS): 9.3%
 
 Switch Characteristics:
+* Operated by pressing lever in
 * Standing Voltage: Matches V Supply
 * Activated Voltage: 0.03V
 * Switch Activation (Fall) Time: 80ns
